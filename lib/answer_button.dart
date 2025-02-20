@@ -14,7 +14,6 @@ class AnswerButton extends StatelessWidget {
   Widget build(context) {
     return ElevatedButton(
       onPressed: onTap,
-      child: Text(answerText),
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color.fromARGB(255, 33, 1, 95),
         foregroundColor: Colors.white,
@@ -26,6 +25,7 @@ class AnswerButton extends StatelessWidget {
           horizontal: 40,
         ),
       ),
+      child: Text(answerText, textAlign: TextAlign.center),
     );
   }
 }
